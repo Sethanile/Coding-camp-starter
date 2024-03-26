@@ -1,7 +1,11 @@
 extends CharacterBody2D #tells Godot how this object should act (which class it inherits)
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0 #this is negative because it is acting against gravity
+@export var SPEED = 300.0
+const JUMP_VELOCITY = -800.0 #this is negative because it is acting against gravity
+const plummet_velocity = 8000.0
+
+var can_doublejump = false
+var is_crouching = false
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -18,8 +22,22 @@ func _physics_process(delta): #a delta function means it is a loop that plays ov
 		velocity.y += gravity * delta
 
 	# Handle jump.
+	#if Input.is_action_just_pressed("jump") and is_on_floor():
+	#	velocity.y = JUMP_VELOCITY #velcoity.y means speed upwards
+
 	if Input.is_action_just_pressed("jump") and is_on_floor():
-		velocity.y = JUMP_VELOCITY #velcoity.y means speed upwards
+		can_doublejump = true
+		velocity.y = JUMP_VELOCITY
+	elif Input.is_action_just_pressed("jump") and !is_on_floor() and can_doublejump:
+		can_doublejump = false 
+		velocity.y = JUMP_VELOCITY
+	if Input.is_action_pressed("crouch") and is_on_floor():
+		SPEED = 100.0
+		floor_stop_on_slope = false
+		velocity.y = plummet_velocity
+	else:
+		SPEED = 300.0
+		floor_stop_on_slope = true
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions using the input map in project settings
