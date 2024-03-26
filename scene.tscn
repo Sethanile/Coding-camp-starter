@@ -3,7 +3,9 @@
 [ext_resource type="Texture2D" uid="uid://b0ckb8cal0nju" path="res://art assets/tiles.png" id="1_60qkl"]
 [ext_resource type="PackedScene" uid="uid://de1hy3nwp5fdl" path="res://player.tscn" id="2_xtmxj"]
 [ext_resource type="PackedScene" uid="uid://bu6k0iv0wcium" path="res://pumpkin.tscn" id="3_1voj6"]
+[ext_resource type="PackedScene" uid="uid://cybnylfik3irh" path="res://mine.tscn" id="3_81755"]
 [ext_resource type="Texture2D" uid="uid://6ebes73jif3e" path="res://art assets/background game.png" id="4_jvkk8"]
+
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tas2v"]
 bounce = 0.25
@@ -81,4 +83,8 @@ texture = ExtResource("4_jvkk8")
 [node name="Camera2D" type="Camera2D" parent="Player"]
 
 [node name="Pumpkin" parent="." instance=ExtResource("3_1voj6")]
-position = Vector2(387, -41)
+position = Vector2(283, -25)
+
+[node name="mine" parent="." instance=ExtResource("3_81755")]
+texture_filter = 1
+position = Vector2(418, 18)

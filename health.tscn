@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0rjp3kv3467k"]
+
+[ext_resource type="Script" path="res://health.gd" id="1_bxrg4"]
+
+[node name="health" type="Node"]
+script = ExtResource("1_bxrg4")
+
+[connection signal="died" from="." to="." method="_on_died"]
