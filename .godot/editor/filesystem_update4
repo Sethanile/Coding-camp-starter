@@ -1,4 +1,2 @@
-res://scene.tscn
 res://player.tscn
-res://Player.gd
-res://object_grab.gd
+res://scene.tscn
