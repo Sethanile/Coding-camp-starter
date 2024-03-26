@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cnfa5hi0twih"
-path="res://.godot/imported/holy guy walk.png-36aa733dfcc11ee85aa655aa1392b9cb.ctex"
+uid="uid://6ebes73jif3e"
+path="res://.godot/imported/background game.png-3fd0b4947d2cd1234c4e56dbd2c4b9f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art assets/holy guy walk.png"
-dest_files=["res://.godot/imported/holy guy walk.png-36aa733dfcc11ee85aa655aa1392b9cb.ctex"]
+source_file="res://art assets/background game.png"
+dest_files=["res://.godot/imported/background game.png-3fd0b4947d2cd1234c4e56dbd2c4b9f4.ctex"]
 
 [params]
 
