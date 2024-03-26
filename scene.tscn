@@ -1,0 +1,74 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmtsfh11nch7d"]
+
+[ext_resource type="Texture2D" uid="uid://b0ckb8cal0nju" path="res://art assets/tiles.png" id="1_60qkl"]
+[ext_resource type="PackedScene" uid="uid://de1hy3nwp5fdl" path="res://player.tscn" id="2_xtmxj"]
+[ext_resource type="PackedScene" uid="uid://bu6k0iv0wcium" path="res://pumpkin.tscn" id="3_1voj6"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_tas2v"]
+bounce = 0.25
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7upbb"]
+texture = ExtResource("1_60qkl")
+separation = Vector2i(24, 4)
+texture_region_size = Vector2i(97, 97)
+4:0/0 = 0
+4:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:0/0/physics_layer_0/angular_velocity = 0.0
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:0/0 = 0
+5:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:0/0/physics_layer_0/angular_velocity = 0.0
+5:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+5:1/0 = 0
+5:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+5:1/0/physics_layer_0/angular_velocity = 0.0
+5:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0 = 0
+4:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+4:1/0/physics_layer_0/angular_velocity = 0.0
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48.5, -48.5, 48.5, -48.5, 48.5, 48.5, -48.5, 48.5)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49, -49.5, 49, -49.5, 49, 49.5, -49, 49.5)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-49, -49.5, 49, -49.5, 49, 49.5, -49, 49.5)
+2:1/0 = 0
+2:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:1/0/physics_layer_0/angular_velocity = 0.0
+2:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-48.5, -48.5, -2, -5.5, 48.5, 48.5, -48.5, 48.5)
+1:1/0 = 0
+1:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:1/0/physics_layer_0/angular_velocity = 0.0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-2, 0.5, 48.5, -48.5, 48.5, 48.5, -48.5, 48.5)
+
+[sub_resource type="TileSet" id="TileSet_wvs7c"]
+tile_size = Vector2i(97, 97)
+physics_layer_0/collision_layer = 2
+physics_layer_0/collision_mask = 5
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_tas2v")
+sources/0 = SubResource("TileSetAtlasSource_7upbb")
+
+[node name="scene" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+position = Vector2(-234, 105)
+tile_set = SubResource("TileSet_wvs7c")
+format = 2
+layer_0/tile_data = PackedInt32Array(-65534, 131072, 0, -65533, 131072, 0, -65532, 131072, 0, -65531, 131072, 0, -65530, 131072, 0, -131065, 65536, 1, -196600, 65536, 1, -65529, 65536, 0, -65528, 65536, 0, -131064, 65536, 0, -196599, 131072, 0, -196598, 131072, 0, -131063, 65536, 0, -131062, 65536, 0, -65526, 65536, 0, -65527, 65536, 0, -196596, 65536, 0, -131060, 65536, 0, -262132, 131072, 0)
+
+[node name="Player" parent="." instance=ExtResource("2_xtmxj")]
+unique_name_in_owner = true
+position = Vector2(67, -95)
+collision_priority = 8.76
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="Pumpkin" parent="." instance=ExtResource("3_1voj6")]
+position = Vector2(387, -41)
