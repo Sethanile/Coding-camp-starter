@@ -1,7 +1,7 @@
 extends CharacterBody2D #tells Godot how this object should act (which class it inherits)
 
 @export var SPEED = 300.0
-const dash_speed = 2000.0
+const dash_speed = 3000.0
 
 const JUMP_VELOCITY = -700.0 #this is negative because it is acting against gravity
 const plummet_velocity = 900.0
