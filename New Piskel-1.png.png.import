@@ -2,20 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://btnpjwp3md7ed"
-=======
-uid="uid://cbean41dua650"
->>>>>>> 9efd1eabd119dda32f3ab4a08af349e6f65de0e1
-path="res://.godot/imported/mine explosion.png-abdacf09f26e35cefb56fd5bc840031a.ctex"
+uid="uid://dy0pqns2nn2pk"
+path="res://.godot/imported/New Piskel-1.png.png-5bd417022c4f3e30e3bd272836ced644.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art assets/mine explosion.png"
-dest_files=["res://.godot/imported/mine explosion.png-abdacf09f26e35cefb56fd5bc840031a.ctex"]
+source_file="res://New Piskel-1.png.png"
+dest_files=["res://.godot/imported/New Piskel-1.png.png-5bd417022c4f3e30e3bd272836ced644.ctex"]
 
 [params]
 

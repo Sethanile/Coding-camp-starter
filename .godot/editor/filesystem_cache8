@@ -1,4 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
+<<<<<<< HEAD
 ::res://::1711470391
 coin.tscn::PackedScene::-1::1711467662::0::1::::<><>::
 health.gd::GDScript::-1::1711460176::0::1::::<>Node<>::
@@ -34,3 +35,27 @@ star and coin.png::CompressedTexture2D::7576454355733222338::1711460178::1711470
 tiles.png::CompressedTexture2D::4145881222249460978::1711457969::1711470122::1::::<><>::
 Tileset2.png::CompressedTexture2D::7609524428716769770::1711464214::1711470420::1::::<><>::
 ::res://Coding-camp-starter/::1711470106
+=======
+::res://::1711465814
+health.gd::GDScript::-1::1711460175::0::1::::<>Node<>::
+health.tscn::PackedScene::4176810923400984718::1711464468::0::1::::<><>::res://health.gd
+icon.svg::CompressedTexture2D::8182601831116274527::1711448979::1711458251::1::::<><>::
+mine.gd::GDScript::-1::1711464638::0::1::::<>RigidBody2D<>::
+mine.tscn::PackedScene::6460270758271551401::1711464468::0::1::::<><>::res://object_grab.gd<>uid://dy0pqns2nn2pk::::res://New Piskel-1.png.png<>uid://mawyalcolt3p::::res://New Piskel-1.png (1).png
+New Piskel-1.png (1).png::CompressedTexture2D::843644773653851723::1711460910::1711460910::1::::<><>::
+New Piskel-1.png.png::CompressedTexture2D::8896343781692252940::1711458665::1711458666::1::::<><>::
+object_grab.gd::GDScript::-1::1711448979::0::1::::<>RigidBody2D<>::
+Player.gd::GDScript::-1::1711460125::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7494160616997140453::1711464468::0::1::::<><>::uid://dtdwx2okxw7xk::::res://art assets/player0000.png<>res://Player.gd<>uid://pwdvehhx5osx::::res://art assets/player0006.png<>uid://8j5seulyxa2k::::res://art assets/player0012.png<>uid://dsxfbi5w6gnp5::::res://art assets/player0018.png
+pumpkin.tscn::PackedScene::3854845535397956260::1711448979::0::1::::<><>::res://object_grab.gd<>uid://dmrkivos7dvkq::::res://art assets/pumpkin.png
+scene.tscn::PackedScene::3269012228543093247::1711464468::0::1::::<><>::uid://b0ckb8cal0nju::::res://art assets/tiles.png<>uid://de1hy3nwp5fdl::::res://player.tscn<>uid://bu6k0iv0wcium::::res://pumpkin.tscn<>uid://cybnylfik3irh::::res://mine.tscn
+::res://art assets/::1711465814
+mine explosion.png::CompressedTexture2D::4851312500866376113::1711465793::1711465814::1::::<><>::
+player0000.png::CompressedTexture2D::8500421500808480760::1711448979::1711458251::1::::<><>::
+player0006.png::CompressedTexture2D::1098468839067114163::1711448979::1711458251::1::::<><>::
+player0012.png::CompressedTexture2D::2336665135437144248::1711448979::1711458251::1::::<><>::
+player0018.png::CompressedTexture2D::8470447763237188912::1711448979::1711458251::1::::<><>::
+pumpkin.png::CompressedTexture2D::8037245178311969552::1711448979::1711458251::1::::<><>::
+tiles.png::CompressedTexture2D::4145881222249460978::1711448979::1711458251::1::::<><>::
+::res://Coding-camp-starter/::1711448979
+>>>>>>> 9efd1eabd119dda32f3ab4a08af349e6f65de0e1
