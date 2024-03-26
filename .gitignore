@@ -9,6 +9,13 @@
 .import/
 export.cfg
 export_presets.cfg
+.godot/editor/editor_layout.cfg
+.godot/editor/filesystem_cache8
+.godot/editor/player.tscn-editstate-36a25e342948d0ceacc500772b5412b3.cfg
+.godot/editor/project_metadata.cfg
+.godot/editor/scene.tscn-editstate-78c237d4bfdb4e1d02e0b5f38ddfd8bd.cfg
+.godot/editor/script_editor_cache.cfg
+.godot/uid_cache.bin
 
 
 # Imported translations (automatically generated from CSV files)
