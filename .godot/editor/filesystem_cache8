@@ -1,12 +1,13 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711458051
+::res://::1711465174
 icon.svg::CompressedTexture2D::8182601831116274527::1711457969::1711458053::1::::<><>::
-object_grab.gd::GDScript::-1::1711457969::0::1::::<>RigidBody2D<>::
-Player.gd::GDScript::-1::1711457969::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7494160616997140453::1711457969::0::1::::<><>::uid://dtdwx2okxw7xk::::res://art assets/player0000.png<>res://Player.gd<>uid://pwdvehhx5osx::::res://art assets/player0006.png<>uid://8j5seulyxa2k::::res://art assets/player0012.png<>uid://dsxfbi5w6gnp5::::res://art assets/player0018.png
+object_grab.gd::GDScript::-1::1711462462::0::1::::<>RigidBody2D<>::
+Player.gd::GDScript::-1::1711465174::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7494160616997140453::1711464339::0::1::::<><>::uid://dtdwx2okxw7xk::::res://art assets/player0000.png<>res://Player.gd<>uid://pwdvehhx5osx::::res://art assets/player0006.png<>uid://8j5seulyxa2k::::res://art assets/player0012.png<>uid://dsxfbi5w6gnp5::::res://art assets/player0018.png
 pumpkin.tscn::PackedScene::3854845535397956260::1711457969::0::1::::<><>::res://object_grab.gd<>uid://dmrkivos7dvkq::::res://art assets/pumpkin.png
-scene.tscn::PackedScene::3269012228543093247::1711457969::0::1::::<><>::uid://b0ckb8cal0nju::::res://art assets/tiles.png<>uid://de1hy3nwp5fdl::::res://player.tscn<>uid://bu6k0iv0wcium::::res://pumpkin.tscn
-::res://art assets/::1711457969
+scene.tscn::PackedScene::3269012228543093247::1711465174::0::1::::<><>::uid://b0ckb8cal0nju::::res://art assets/tiles.png<>uid://de1hy3nwp5fdl::::res://player.tscn<>uid://bu6k0iv0wcium::::res://pumpkin.tscn
+::res://art assets/::1711465277
+background game.png::CompressedTexture2D::2184180520102213024::1711463666::1711465279::1::::<><>::
 player0000.png::CompressedTexture2D::8500421500808480760::1711457969::1711458053::1::::<><>::
 player0006.png::CompressedTexture2D::1098468839067114163::1711457969::1711458053::1::::<><>::
 player0012.png::CompressedTexture2D::2336665135437144248::1711457969::1711458053::1::::<><>::
