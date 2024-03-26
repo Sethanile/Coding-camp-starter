@@ -1,0 +1,36 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1711470391
+coin.tscn::PackedScene::-1::1711467662::0::1::::<><>::
+health.gd::GDScript::-1::1711460176::0::1::::<>Node<>::
+hud.gd::GDScript::-1::1711467060::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::-1::1711467662::0::1::::<><>::
+icon.svg::CompressedTexture2D::8182601831116274527::1711457969::1711470122::1::::<><>::
+mine.gd::GDScript::-1::1711466204::0::1::::<>RigidBody2D<>::
+mine.tscn::PackedScene::-1::1711466730::0::1::::<><>::
+object_grab.gd::GDScript::-1::1711462462::0::1::::<>RigidBody2D<>::
+pickup.gd::GDScript::-1::1711463300::0::1::::<>Node2D<>::
+pickup_coin.gd::GDScript::-1::1711465292::0::1::::<>Node2D<>::
+player resources.gd::GDScript::-1::1711466852::0::1::::<>Node<>::
+Player.gd::GDScript::-1::1711470106::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7494160616997140453::1711470106::0::1::::<><>::uid://dtdwx2okxw7xk::::res://art assets/player0000.png<>res://Player.gd<>uid://pwdvehhx5osx::::res://art assets/player0006.png<>uid://8j5seulyxa2k::::res://art assets/player0012.png<>uid://dsxfbi5w6gnp5::::res://art assets/player0018.png
+player_resources.tscn::PackedScene::-1::1711467662::0::1::::<><>::
+pumpkin.tscn::PackedScene::3854845535397956260::1711457969::0::1::::<><>::res://object_grab.gd<>uid://dmrkivos7dvkq::::res://art assets/pumpkin.png
+scene.tscn::PackedScene::3269012228543093247::1711470106::0::1::::<><>::uid://b0ckb8cal0nju::::res://art assets/tiles.png<>uid://de1hy3nwp5fdl::::res://player.tscn<>uid://bu6k0iv0wcium::::res://pumpkin.tscn<>uid://6ebes73jif3e::::res://art assets/background game.png
+star.tscn::PackedScene::-1::1711467662::0::1::::<><>::
+::res://art assets/::1711470411
+background game.png::CompressedTexture2D::2184180520102213024::1711470106::1711470122::1::::<><>::
+holy guy idle(1).png::CompressedTexture2D::2435800007033826478::1711458926::1711470420::1::::<><>::
+holy guy main(2).png::CompressedTexture2D::1002199512387946067::1711458868::1711470420::1::::<><>::
+holy guy walk.png::CompressedTexture2D::8596132355579192162::1711462246::1711470420::1::::<><>::
+Jug(1).png::CompressedTexture2D::7391057398104753092::1711459088::1711470420::1::::<><>::
+mine explosion.png::CompressedTexture2D::3747773630629286819::1711465794::1711470420::1::::<><>::
+player0000.png::CompressedTexture2D::8500421500808480760::1711457969::1711470122::1::::<><>::
+player0006.png::CompressedTexture2D::1098468839067114163::1711457969::1711470122::1::::<><>::
+player0012.png::CompressedTexture2D::2336665135437144248::1711457969::1711470122::1::::<><>::
+player0018.png::CompressedTexture2D::8470447763237188912::1711457969::1711470122::1::::<><>::
+pumpkin.png::CompressedTexture2D::8037245178311969552::1711457969::1711470122::1::::<><>::
+Scroll.png::CompressedTexture2D::426951597199031148::1711460944::1711470420::1::::<><>::
+star and coin.png::CompressedTexture2D::7576454355733222338::1711460178::1711470420::1::::<><>::
+tiles.png::CompressedTexture2D::4145881222249460978::1711457969::1711470122::1::::<><>::
+Tileset2.png::CompressedTexture2D::7609524428716769770::1711464214::1711470420::1::::<><>::
+::res://Coding-camp-starter/::1711470106
