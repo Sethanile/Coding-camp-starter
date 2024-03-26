@@ -35,4 +35,3 @@ func _physics_process(delta): #a delta function means it is a loop that plays ov
 		
 	move_and_slide() #in built function to control player character collision behaviour
 
-
