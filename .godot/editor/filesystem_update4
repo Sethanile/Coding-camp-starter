@@ -1,14 +1,3 @@
-<<<<<<< HEAD
-res://player.tscn
 res://scene.tscn
-=======
-res://scene.tscn
-res://heath.tscn
-res://heath.gd
-res://health.tscn
-res://health.gd
-res://Player.gd
-res://mine.tscn
 res://player.tscn
-res://mine.gd
->>>>>>> 9efd1eabd119dda32f3ab4a08af349e6f65de0e1
+res://scene1.tscn
