@@ -1,8 +1,11 @@
 extends CharacterBody2D #tells Godot how this object should act (which class it inherits)
 
-const SPEED = 300.0
-const JUMP_VELOCITY = -400.0 #this is negative because it is acting against gravity
+@export var SPEED = 300.0
+const JUMP_VELOCITY = -800.0 #this is negative because it is acting against gravity
+const plummet_velocity = 8000.0
 
+var can_doublejump = false
+var is_crouching = false
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
