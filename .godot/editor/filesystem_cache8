@@ -1,30 +1,33 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1711471224
+::res://::1711474898
 coin.tscn::PackedScene::-1::1711467662::0::1::::<><>::
-health.gd::GDScript::-1::1711460176::0::1::::<>Node<>::
+health.gd::GDScript::-1::1711474487::0::1::::<>Node<>::
 health.tscn::PackedScene::4176810923400984718::1711470472::0::1::::<><>::res://health.gd
-hud.gd::GDScript::-1::1711467060::0::1::::<>CanvasLayer<>::
-hud.tscn::PackedScene::-1::1711467662::0::1::::<><>::
+hud.gd::GDScript::-1::1711474389::0::1::::<>CanvasLayer<>::
+hud.tscn::PackedScene::5359842895333505921::1711474709::0::1::::<><>::res://hud.gd<>uid://dr6ej5a1fxhnm::::res://art assets/hud.png
 icon.svg::CompressedTexture2D::8182601831116274527::1711457969::1711470122::1::::<><>::
-mine.gd::GDScript::-1::1711466204::0::1::::<>RigidBody2D<>::
-mine.tscn::PackedScene::6460270758271551401::1711466730::0::1::::<><>::res://mine.gd<>uid://dy0pqns2nn2pk::::res://New Piskel-1.png.png<>uid://cbean41dua650::::res://art assets/mine explosion.png
+mine.gd::GDScript::-1::1711473839::0::1::::<>StaticBody2D<>::
+mine.tscn::PackedScene::-1::1711473707::0::1::::<><>::
+My Song 4.mp3::AudioStreamMP3::3739631842984221519::1711474898::1711474899::1::::<><>::
 New Piskel-1.png (1).png::CompressedTexture2D::843644773653851723::1711470472::1711470472::1::::<><>::
 New Piskel-1.png.png::CompressedTexture2D::8896343781692252940::1711470472::1711470472::1::::<><>::
 object_grab.gd::GDScript::-1::1711462462::0::1::::<>RigidBody2D<>::
 pickup.gd::GDScript::-1::1711463300::0::1::::<>Node2D<>::
 pickup_coin.gd::GDScript::-1::1711465292::0::1::::<>Node2D<>::
-player resources.gd::GDScript::-1::1711466852::0::1::::<>Node<>::
-Player.gd::GDScript::-1::1711470472::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7494160616997140453::1711470429::0::1::::<><>::uid://dtdwx2okxw7xk::::res://art assets/player0000.png<>res://Player.gd<>uid://pwdvehhx5osx::::res://art assets/player0006.png<>uid://8j5seulyxa2k::::res://art assets/player0012.png<>uid://dsxfbi5w6gnp5::::res://art assets/player0018.png
+player resources.gd::GDScript::-1::1711472230::0::1::::<>Node<>::
+Player.gd::GDScript::-1::1711473257::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7494160616997140453::1711474709::0::1::::<><>::res://Player.gd<>uid://bax6jgns18hkw::::res://art assets/holy guy idle(1).png<>uid://duqbbq32yq1es::::res://art assets/holy guy walk.png
 player_resources.tscn::PackedScene::-1::1711467662::0::1::::<><>::
 pumpkin.tscn::PackedScene::3854845535397956260::1711457969::0::1::::<><>::res://object_grab.gd<>uid://dmrkivos7dvkq::::res://art assets/pumpkin.png
-scene.tscn::PackedScene::3269012228543093247::1711470472::0::1::::<><>::uid://b0ckb8cal0nju::::res://art assets/tiles.png<>uid://de1hy3nwp5fdl::::res://player.tscn<>uid://bu6k0iv0wcium::::res://pumpkin.tscn<>uid://cybnylfik3irh::::res://mine.tscn<>uid://6ebes73jif3e::::res://art assets/background game.png
+scene1.tscn::PackedScene::4421115193980188257::1711471724::0::1::::<><>::uid://de1hy3nwp5fdl::::res://player.tscn<>uid://bu6k0iv0wcium::::res://pumpkin.tscn
+scene.tscn::PackedScene::3269012228543093247::1711474785::0::1::::<><>::uid://ciml3g14qnux2::::res://hud.tscn<>uid://dgod0xpe1xdf3::::res://art assets/Tileset2.png<>uid://de1hy3nwp5fdl::::res://player.tscn<>res://mine.tscn<>uid://6ebes73jif3e::::res://art assets/background game.png<>res://player_resources.tscn<>uid://b0rjp3kv3467k::::res://health.tscn<>res://coin.tscn<>res://star.tscn
 star.tscn::PackedScene::-1::1711467662::0::1::::<><>::
-::res://art assets/::1711470731
+::res://art assets/::1711473586
 background game.png::CompressedTexture2D::2184180520102213024::1711470106::1711470122::1::::<><>::
 holy guy idle(1).png::CompressedTexture2D::2435800007033826478::1711458926::1711470420::1::::<><>::
 holy guy main(2).png::CompressedTexture2D::1002199512387946067::1711458868::1711470420::1::::<><>::
 holy guy walk.png::CompressedTexture2D::8596132355579192162::1711462246::1711470420::1::::<><>::
+hud.png::CompressedTexture2D::8416728620307336234::1711473585::1711473586::1::::<><>::
 Jug(1).png::CompressedTexture2D::7391057398104753092::1711459088::1711470420::1::::<><>::
 mine explosion.png::CompressedTexture2D::3087155030971079714::1711465794::1711470731::1::::<><>::
 player0000.png::CompressedTexture2D::8500421500808480760::1711457969::1711470122::1::::<><>::

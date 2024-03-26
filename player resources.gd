@@ -1,7 +1,8 @@
 extends Node
 @export var exp = 0
 @export var coins = 0
-@onready var hud = $"../hud"
+@onready var hud = $"../../CanvasLayer/hud"
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

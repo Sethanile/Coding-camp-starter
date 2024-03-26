@@ -1,3 +1,8 @@
+Marker2D
+AudioStreamPlayer2D
+ProgressBar
+Sprite2D
+StaticBody2D
 CanvasLayer
 AnimationPlayer
 CollisionPolygon2D

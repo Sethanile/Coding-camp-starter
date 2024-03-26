@@ -3,7 +3,7 @@ extends CharacterBody2D #tells Godot how this object should act (which class it 
 @export var SPEED = 300.0
 const dash_speed = 2000.0
 
-const JUMP_VELOCITY = -700.0 #this is negative because it is acting against gravity
+const JUMP_VELOCITY = -550.0 #this is negative because it is acting against gravity
 const plummet_velocity = 900.0
 
 var can_doublejump = false
@@ -38,10 +38,10 @@ func _physics_process(delta):
 		$AnimatedSprite2D.flip_h = (direction == -1)
 	if direction:
 		velocity.x = direction * SPEED
-		$AnimatedSprite2D.play("skip")
+		$AnimatedSprite2D.play("walk")
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-		$AnimatedSprite2D.play("default")
+		$AnimatedSprite2D.play("idle")
 
 	#jump and double jump
 	if Input.is_action_just_pressed("jump") and is_on_floor():

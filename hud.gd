@@ -2,6 +2,7 @@ extends CanvasLayer
 
 @onready var exp = $Panel/exp
 @onready var coin = $Panel/coin
+@onready var progress_bar = $Panel/ProgressBar
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,3 +18,6 @@ func set_coins(value):
 
 func set_exp(value):
 	exp.text = str(value) + " exp"
+
+func set_hp(value):
+	progress_bar.value = value

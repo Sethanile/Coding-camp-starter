@@ -1,8 +1,113 @@
-[gd_scene load_steps=8 format=3 uid="uid://cybnylfik3irh"]
+[gd_scene load_steps=10 format=3 uid="uid://d1bplg2we616g"]
 
 [ext_resource type="Script" path="res://mine.gd" id="1_ovl4n"]
-[ext_resource type="Texture2D" uid="uid://dy0pqns2nn2pk" path="res://New Piskel-1.png.png" id="2_06ekq"]
-[ext_resource type="Texture2D" uid="uid://cbean41dua650" path="res://art assets/mine explosion.png" id="3_h71w8"]
+[ext_resource type="Texture2D" uid="uid://bj8o80egn4w7s" path="res://art assets/mine explosion.png" id="3_h71w8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_a6dbt"]
+radius = 32.0
+
+[sub_resource type="Animation" id="Animation_o1jj4"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerDetection/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DamageBox:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DamageBox:monitorable")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DamageBox/CollisionShape2D:shape:radius")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [20.0]
+}
+
+[sub_resource type="Animation" id="Animation_vvpaa"]
+resource_name = "boom"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("PlayerDetection/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.9, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [13, 14, 15, 16]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DamageBox:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DamageBox:monitorable")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("DamageBox/CollisionShape2D:shape:radius")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 1.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [20.0, 68.45]
+}
 
 [sub_resource type="Animation" id="Animation_umffm"]
 resource_name = "idle"
@@ -11,7 +116,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Area2D/Sprite2D:frame")
+tracks/0/path = NodePath("PlayerDetection/Sprite2D:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -20,24 +125,30 @@ tracks/0/keys = {
 "update": 1,
 "values": [1, 2, 3, 4]
 }
-
-[sub_resource type="Animation" id="Animation_o1jj4"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Area2D/Sprite2D:frame")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("DamageBox:monitoring")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
-"values": [1]
+"values": [false]
 }
-
-[sub_resource type="Animation" id="Animation_vvpaa"]
-resource_name = "boom"
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("DamageBox:monitorable")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_e8m53"]
 _data = {
@@ -46,39 +157,46 @@ _data = {
 "idle": SubResource("Animation_umffm")
 }
 
-[node name="mine" type="RigidBody2D"]
+[sub_resource type="CircleShape2D" id="CircleShape2D_qqyg7"]
+radius = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4jti0"]
+size = Vector2(44, 10)
+
+[node name="mine" type="StaticBody2D"]
 collision_layer = 4
 collision_mask = 3
-mass = 0.12
-gravity_scale = 0.141
 script = ExtResource("1_ovl4n")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="PlayerDetection" type="Area2D" parent="."]
 
-[node name="Sprite2D2" type="Polygon2D" parent="Area2D"]
-position = Vector2(-3, -51)
-scale = Vector2(4.97546, 6.2544)
-texture = ExtResource("2_06ekq")
-polygon = PackedVector2Array(5.02466, 6.55538, -5.42664, 6.87516, 0, -0.959325, 0, -0.959325)
-uv = PackedVector2Array(29.4, 25.6, 28.3, 28, 4, 28, 4, 24.2, 14, 14.2, 14, 12.6, 16.5, 11.6)
-polygons = [PackedInt32Array(0, 1, 2, 3, 4, 5, 6)]
-
-[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
-position = Vector2(-5, -50)
+[node name="Sprite2D" type="Sprite2D" parent="PlayerDetection"]
+position = Vector2(-2, -37)
 scale = Vector2(4.97546, 6.2544)
 texture = ExtResource("3_h71w8")
 hframes = 4
 vframes = 5
-frame = 1
+frame = 2
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
-polygon = PackedVector2Array(21, -14, -2, -38, -27, -12)
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-polygon = PackedVector2Array(-2, -39, -28, -11, 23, -11)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerDetection"]
+shape = SubResource("CircleShape2D_a6dbt")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
 "": SubResource("AnimationLibrary_e8m53")
 }
 autoplay = "idle"
+
+[node name="DamageBox" type="Area2D" parent="."]
+monitoring = false
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DamageBox"]
+shape = SubResource("CircleShape2D_qqyg7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_4jti0")
+
+[connection signal="body_entered" from="PlayerDetection" to="." method="_on_player_detection_body_entered"]
+[connection signal="body_entered" from="DamageBox" to="." method="_on_area_2d_2_body_entered"]

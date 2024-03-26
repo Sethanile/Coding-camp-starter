@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://b0ijaxf1d1hes"]
+[gd_scene load_steps=5 format=3 uid="uid://ciml3g14qnux2"]
 
 [ext_resource type="Script" path="res://hud.gd" id="1_200il"]
+[ext_resource type="Texture2D" uid="uid://dr6ej5a1fxhnm" path="res://art assets/hud.png" id="2_arjlm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3s8hr"]
+bg_color = Color(0.270588, 0.270588, 0.270588, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3hkdm"]
+bg_color = Color(0.65098, 0.113725, 0.196078, 1)
 
 [node name="hud" type="CanvasLayer"]
 script = ExtResource("1_200il")
@@ -11,20 +18,41 @@ offset_top = -1.0
 offset_right = 212.0
 offset_bottom = 39.0
 
+[node name="ProgressBar" type="ProgressBar" parent="Panel"]
+layout_mode = 0
+offset_left = 49.0
+offset_top = 53.0
+offset_right = 378.0
+offset_bottom = 80.0
+theme_override_styles/background = SubResource("StyleBoxFlat_3s8hr")
+theme_override_styles/fill = SubResource("StyleBoxFlat_3hkdm")
+max_value = 5.0
+step = 1.0
+value = 5.0
+show_percentage = false
+
+[node name="Hud" type="Sprite2D" parent="Panel"]
+position = Vector2(305, 308)
+scale = Vector2(10.2333, 10.2333)
+texture = ExtResource("2_arjlm")
+
 [node name="exp" type="Label" parent="Panel"]
+layout_mode = 0
 offset_left = 3.0
 offset_top = 2.0
 offset_right = 54.0
 offset_bottom = 25.0
 scale = Vector2(1.7251, 1.56536)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = " exp
 "
 
 [node name="coin" type="Label" parent="Panel"]
 layout_mode = 0
 offset_left = 104.0
-offset_top = 5.0
+offset_top = 3.0
 offset_right = 167.0
-offset_bottom = 28.0
+offset_bottom = 26.0
 scale = Vector2(1.64992, 1.5021)
+theme_override_colors/font_color = Color(0, 0, 0, 1)
 text = " coins"
